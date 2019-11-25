@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.3 Massive Generation", "1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.4 Sort Array", "1.4 Sort Array\1.4 Sort Array.csproj", "{AC6871D6-A1F7-4FD3-910F-C372E9B19E91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.5 Formulas", "1.5 Formulas\1.5 Formulas.csproj", "{03DAF0A5-A8FE-47EA-9EA9-1DFC28EBB0CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.5 Formulas", "1.5 Formulas\1.5 Formulas.csproj", "{03DAF0A5-A8FE-47EA-9EA9-1DFC28EBB0CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.6 Text", "1.6 Text\1.6 Text.csproj", "{70493904-767C-46B6-91BE-AEFE2A84E142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.6 Text", "1.6 Text\1.6 Text.csproj", "{70493904-767C-46B6-91BE-AEFE2A84E142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.1 HelloWorld", "3.1 HelloWorld\3.1 HelloWorld.csproj", "{9A3D483F-4D25-4840-B3A2-FEAE67C19BEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{70493904-767C-46B6-91BE-AEFE2A84E142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70493904-767C-46B6-91BE-AEFE2A84E142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70493904-767C-46B6-91BE-AEFE2A84E142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A3D483F-4D25-4840-B3A2-FEAE67C19BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3D483F-4D25-4840-B3A2-FEAE67C19BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3D483F-4D25-4840-B3A2-FEAE67C19BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3D483F-4D25-4840-B3A2-FEAE67C19BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
