@@ -1,0 +1,32 @@
+﻿@model IEnumerable<_3._8_First_app.Models.Tablet>
+@{
+    //ViewData["Title"] = "Список планшетов;
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Магазин Планшетов</title>
+</head>
+<body>
+    <h3>Планшеты</h3>
+    <table>
+        <tr>
+            <td>Модель</td>
+            <td>Производитель</td>
+            <td>Цена</td>
+            <td></td>
+        </tr>
+        @foreach (var tablet in Model)
+        {
+            <tr>
+                <td>@tablet.Name</td>
+                <td>@tablet.Company</td>
+                <td>@tablet.Price</td>
+                <td><a href="~/Home/Buy/@tablet.Id">Купить</a></td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
