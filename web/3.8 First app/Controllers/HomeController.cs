@@ -20,5 +20,20 @@ namespace _3._8_First_app.Controllers
         {
             return View(db.Phones.ToList());
         }
+
+        [HttpGet]
+        public IActionResult Buy(int? id)
+        {
+            if (id == null) return RedirectToAction("Index");
+            ViewBag.TabletId = id;
+            return View();
+        }
+        [HttpPost]
+        public string Buy(Order order)
+        {
+            db.Orders.Add(order);
+            db.SaveChanges();
+            return "Спасибо, " + order.User + ", за покупку!";
+        }
     }
 }

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace _3._5_Error_Auth
+namespace _3._7_IMessage
 {
-    public class IMessageSender
+    public interface IMessageSender
     {
-
+        public string Send();
     }
 }
