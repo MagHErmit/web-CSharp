@@ -8,7 +8,7 @@ namespace _3._5_Error_Auth
 {
     public class TokenMiddleware
     {
-        private readonly RequestDelegate _next;
+        readonly RequestDelegate _next;
 
         public TokenMiddleware(RequestDelegate next)
         {

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _3._7_IMessage.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -17,19 +18,28 @@ namespace _3._7_IMessage
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IMessageSender, SmsMessageSender>();
+            //services.AddTransient<IMessageSender, EmailMessageSender>();
+            services.AddTransient<MessageService>();
+
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(5);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IMessageSender messageSender)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MessageService messageService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSession();
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync(messageSender.Send());
+                await context.Response.WriteAsync(messageService.Send(context));
             });
         }
     }
