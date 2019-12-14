@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.8 First app", "3.8 First 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.5 Error Auth", "3.5 Error Auth\3.5 Error Auth.csproj", "{DEAED181-2CCF-4561-9E34-94B9A32CE5CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.7 IMessage", "3.7 IMessage\3.7 IMessage.csproj", "{CE59E9B1-16AB-4BEE-83A5-2259033243B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.7 IMessage", "3.7 IMessage\3.7 IMessage.csproj", "{CE59E9B1-16AB-4BEE-83A5-2259033243B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.0 GetPost", "4.0 GetPost\4.0 GetPost.csproj", "{E9E48FAB-145E-4F7A-8C57-0D74F37A9584}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{CE59E9B1-16AB-4BEE-83A5-2259033243B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE59E9B1-16AB-4BEE-83A5-2259033243B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE59E9B1-16AB-4BEE-83A5-2259033243B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9E48FAB-145E-4F7A-8C57-0D74F37A9584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E48FAB-145E-4F7A-8C57-0D74F37A9584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E48FAB-145E-4F7A-8C57-0D74F37A9584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E48FAB-145E-4F7A-8C57-0D74F37A9584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
