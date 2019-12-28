@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.5 Error Auth", "3.5 Error
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.7 IMessage", "3.7 IMessage\3.7 IMessage.csproj", "{CE59E9B1-16AB-4BEE-83A5-2259033243B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.0 GetPost", "4.0 GetPost\4.0 GetPost.csproj", "{E9E48FAB-145E-4F7A-8C57-0D74F37A9584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.0 GetPost", "4.0 GetPost\4.0 GetPost.csproj", "{E9E48FAB-145E-4F7A-8C57-0D74F37A9584}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

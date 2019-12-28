@@ -2,11 +2,16 @@
     ViewData["Title"] = "Properties";
 }
 
-<h1>Свойства</h1>
+<h1>Детали</h1>
+<h3>@ViewBag.alc.Type @ViewBag.alc.Brand</h3>
 <table class="table-condensed">
     <tr>
         <td>Крепость</td>
         <td>Объем</td>
+    </tr>
+    <tr>
+        <td>@ViewBag.alc.Strength</td>
+        <td>@ViewBag.alc.Volume</td>
     </tr>
 </table>
 

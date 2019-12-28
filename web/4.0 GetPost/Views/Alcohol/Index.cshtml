@@ -10,6 +10,12 @@
     <title>Магазин Алкоголя</title>
 </head>
 <body>
+    <form asp-controller="Alcohol" asp-action="Index">
+        <p>
+            <input type="text" name="Key">
+            <input type="submit" value="Поиск">
+        </p>
+    </form>
     <h3>Напитки</h3>
     <table class="table-condensed">
         <tr>
@@ -21,10 +27,13 @@
             <tr>
                 <td>@alc.Brand</td>
                 <td>@alc.Type</td>
-                <td><a href="~Alcohol/Properties/@alc.Id">Подробнее</a></td>
+                <td><a href="Alcohol/Properties/@alc.Id">Подробнее</a></td>
+                <td><a href="Alcohol/Edit/@alc.Id">Изменить</a></td>
+                <td><a href="Alcohol/Delete/@alc.Id">Удалить</a></td>
             </tr>
         }
     </table>
+    <p> <a asp-action="Add">Добавить</a></p>
 </body>
 </html>
 
