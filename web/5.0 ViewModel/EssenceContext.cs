@@ -1,17 +1,18 @@
-﻿using System;
+﻿using _5._0_ViewModel.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
-namespace _4._0_GetPost.Models
+namespace _5._0_ViewModel
 {
-    public class EssenceContext : DbContext
+    public class AlcoMusicContext : DbContext
     {
         public DbSet<Alcohol> Alcohols { get; set; }
         public DbSet<Music> Musics { get; set; }
-        public EssenceContext(DbContextOptions<EssenceContext> options)
-            :base(options)
+        public AlcoMusicContext(DbContextOptions<AlcoMusicContext> options)
+            : base(options)
         {
             Database.EnsureCreated();
         }
