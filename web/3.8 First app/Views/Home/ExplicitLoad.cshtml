@@ -1,0 +1,23 @@
+﻿@model IEnumerable<_3._8_First_app.Models.Order>
+
+@{
+    ViewData["Title"] = "ExplicitLoad";
+}
+
+<h1>ExplicitLoad</h1>
+
+<div>
+    <h4>Orders</h4>
+    <hr />
+    <table class="table-condensed">
+        @foreach (var ord in Model)
+        {
+            <tr>
+                <td>@ord.User</td>
+                <td>@ord.Address</td>
+                <td>@ord.ContactPhone</td>
+                <td>@ord.Tablet?.Name</td>
+            </tr>
+        }
+    </table>
+</div>

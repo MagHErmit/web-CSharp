@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using _3._8_First_app.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace _3._8_First_app.Controllers
 {
@@ -19,6 +20,12 @@ namespace _3._8_First_app.Controllers
         public IActionResult Index()
         {
             return View(db.Phones.ToList());
+        }
+
+        public IActionResult ExplicitLoad()
+        {
+            return View(db.Orders.ToList());
+            //return View(db.Orders.Include(p => p.Tablet).ToList());
         }
 
         [HttpGet]

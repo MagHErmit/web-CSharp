@@ -13,6 +13,6 @@ namespace _3._8_First_app.Models
         public string ContactPhone { get; set; }
 
         public int TabletId { get; set; }
-        public Tablet Tablet { get; set; }
+        public virtual Tablet Tablet { get; set; }
     }
 }

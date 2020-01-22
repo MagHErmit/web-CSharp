@@ -11,6 +11,11 @@ namespace _3._8_First_app.Models
         public DbSet<Tablet> Phones { get; set; }
         public DbSet<Order> Orders { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
+                
+        }
         public TabletContext(DbContextOptions<TabletContext> options)
             : base(options)
         {

@@ -42,7 +42,7 @@ namespace _4._0_GetPost.Controllers
         
         public IActionResult Properties(int? id)
         {
-            if (id == null || db.Alcohols.Find(id) == null) return RedirectToAction("Index");
+            if (id == null || db.Alcohols.Find(id) == null) return NotFound();
             ViewBag.alc = db.Alcohols.Find(id);
             return View();
         }
