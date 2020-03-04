@@ -19,6 +19,7 @@ namespace _2._0_Bar
 
         public void Print()
         {
+            /// TEst
             Console.WriteLine($"Тип: { Find(ref Globals.types) }, Бренд: {Find(ref Globals.brands)}, Объем: {Volume} порции. Крепость: {Strength}");
         }
     }
